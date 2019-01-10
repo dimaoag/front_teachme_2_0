@@ -525,3 +525,4 @@ if ($('ul').is('#main-menu')) {
         $('#main-menu').smartmenus();
     });
 }
+
