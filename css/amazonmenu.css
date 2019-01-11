@@ -43,6 +43,7 @@
 }
 
 
+
 /*.amazonmenu > ul li.hassub > a::after{ !* Arrow to indicate this item has sub menu (LI elements with sub menus have a ".hassub" class). *!*/
 	/*border: 5px solid transparent;*/
 	/*border-left-color: black; !* Default color of arrow *!*/
