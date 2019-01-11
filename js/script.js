@@ -526,3 +526,21 @@ if ($('ul').is('#main-menu')) {
     });
 }
 
+
+$(function(){
+    amazonmenu.init({
+        menuid: 'mysidebarmenu',
+    });
+});
+
+
+$(function(){
+    $('.amazonmenu ul li').each(function ( li) {
+        if ($(this).hasClass('hassub')){
+            // console.log(li);
+            var svg = $(this).find($('svg')).first().css( "display", "block" );
+            console.log(svg);
+        }
+
+    });
+});
