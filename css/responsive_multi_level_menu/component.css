@@ -1,18 +1,18 @@
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+/*@font-face {*/
+	/*font-family: 'icomoon';*/
+	/*src:url('../fonts/icomoon.eot');*/
+	/*src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),*/
+		/*url('../fonts/icomoon.woff') format('woff'),*/
+		/*url('../fonts/icomoon.ttf') format('truetype'),*/
+		/*url('../fonts/icomoon.svg#icomoon') format('svg');*/
+	/*font-weight: normal;*/
+	/*font-style: normal;*/
+/*}*/
 
 /* Common styles of menus */
 
 .dl-menuwrapper {
-	width: 100%;
+	width: 270px;
 	max-width: 300px;
 	float: left;
 	position: relative;
@@ -30,7 +30,7 @@
 	background: #9e3ffc;
 	border: none;
 	width: 48px;
-	height: 45px;
+	height: 40px;
 	text-indent: -900em;
 	overflow: hidden;
 	position: relative;
@@ -45,7 +45,7 @@
 	width: 68%;
 	height: 5px;
 	background: #fff;
-	top: 10px;
+	top: 9px;
 	left: 16%;
 	box-shadow: 
 		0 10px 0 #fff, 
@@ -80,7 +80,8 @@
  	justify-content: space-between;
 	position: relative;
 	padding: 15px 20px;
-	font-size: 16px;
+	font-size: 14px;
+	font-family: sans-serif;
 	line-height: 20px;
 	font-weight: 300;
 	color: black;
@@ -130,10 +131,6 @@
 	transform: rotate(180deg);
 }
 
-/*.dl-menuwrapper li > a:after {*/
-	/*!*right: 10px;*!*/
-	/*!*color: rgba(0,0,0,0.15);*!*/
-/*}*/
 
 .dl-menuwrapper .dl-menu {
 	margin: 5px 0 0 0;
@@ -802,46 +799,4 @@ All this is done for any sub-level being entered.
 	background: #9e1847;
 }
 
-/* Demo 2 */
-.demo-2 .dl-menuwrapper button {
-	background: #e86814;
-}
 
-.demo-2 .dl-menuwrapper button:hover,
-.demo-2 .dl-menuwrapper button.dl-active,
-.demo-2 .dl-menuwrapper ul {
-	background: #D35400;
-}
-
-/* Demo 3 */
-.demo-3 .dl-menuwrapper button {
-	background: #08cbc4;
-}
-
-.demo-3 .dl-menuwrapper button:hover,
-.demo-3 .dl-menuwrapper button.dl-active,
-.demo-3 .dl-menuwrapper ul {
-	background: #00b4ae;
-}
-
-/* Demo 4 */
-.demo-4 .dl-menuwrapper button {
-	background: #90b912;
-}
-
-.demo-4 .dl-menuwrapper button:hover,
-.demo-4 .dl-menuwrapper button.dl-active,
-.demo-4 .dl-menuwrapper ul {
-	background: #79a002;
-}
-
-/* Demo 5 */
-.demo-5 .dl-menuwrapper button {
-	background: #744783;
-}
-
-.demo-5 .dl-menuwrapper button:hover,
-.demo-5 .dl-menuwrapper button.dl-active,
-.demo-5 .dl-menuwrapper ul {
-	background: #643771;
-}
