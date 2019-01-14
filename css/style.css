@@ -1108,34 +1108,45 @@ a.footer-top-content-item:hover{
 }
 
 
-/*breadcrumb*/
+/*------main------*/
+
+.main{
+    min-height: 75vh;
+}
+
+
+/*------breadcrumb------*/
 .breadcrumbs{
+    font-size: 0.875rem;
     /*margin: 20px 0;*/
     /*margin-top: 110px;*/
+
 }
 ul.breadcrumb {
-    padding: 25px 10px;
+    padding: 20px 10px;
     list-style: none;
     background-color: white;
     margin-bottom: 0;
 }
 ul.breadcrumb li {
     display: inline;
+    color: #0a0a0a;
 }
 ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
-    content: "\003e";
+    content: url("../img/breadcrumb_arrow.svg");
 }
 ul.breadcrumb li a {
-    color: #b4b4b4;
+    color: #a8a8a8;
     text-decoration: none;
+    white-space: nowrap;
 }
 ul.breadcrumb li a:hover {
     color: #6b6868;
     text-decoration: underline;
 }
-@media all and (max-width: 1199px){
+@media screen and (max-width: 1199px){
     .search-course-header h4{
         padding-right: 10px;
     }
@@ -1145,9 +1156,6 @@ ul.breadcrumb li a:hover {
     }
     .toggle-main{
         display: none;
-    }
-    .breadcrumbs{
-        margin-top: 20px;
     }
 }
 
