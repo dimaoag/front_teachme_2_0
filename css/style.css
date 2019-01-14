@@ -829,8 +829,22 @@ ul .tooltip{
     align-items: center;
     cursor: pointer;
 }
-.header-bottom-icon a:hover{
+.header-bottom-icon .not-active:hover{
     color: black;
+}
+.header-bottom-icon .active-icon:hover{
+    opacity: 0.7;
+}
+.header-bottom-icon .active-icon{
+    position: relative;
+    color: red;
+}
+.header-bottom-icon .active-icon span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: black;
+    font-size: 12px;
 }
 .header-bottom-icon:not(:last-child){
     margin-right: 20px;
@@ -860,7 +874,7 @@ ul .tooltip{
         margin: 0;
     }
     .nav>li>a {
-        padding: 10px 5px;
+        /*padding: 10px 5px;*/
     }
     .header-is-quest{
         margin-top: 10px;
