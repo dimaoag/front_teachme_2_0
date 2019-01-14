@@ -1158,53 +1158,94 @@ ul.breadcrumb li a:hover {
         display: none;
     }
 }
+/*------breadcrumb-end------*/
 
 
-.menuToggle span
-{
+/*------filter------*/
+
+.city-select-wrap{
     display: block;
-    width: 25px;
-    height: 4px;
-    margin-left: 10px;
-    top: -10px;
-    margin-bottom: 4px;
+    width: 100%;
+    margin-bottom: 15px;
     position: relative;
-    background: white;
-    border-radius: 3px;
-    z-index: 1;
+}
+.city-select-wrap .nice-select{
+    width: 100%;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-left: 0;
+}
+.city-select .list {
+    width: 100%;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-/*filter*/
-.filter-wrap{
-    margin-top: 15px;
+.city-select .list::-webkit-scrollbar-track
+{
+    background-color: #F5F5F5;
 }
+
+.city-select .list::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.city-select .list::-webkit-scrollbar-thumb
+{
+    border-radius: 6px;
+    background-color: #6b6868;
+}
+
+
+
+/*.menuToggle span*/
+/*{*/
+    /*display: block;*/
+    /*width: 25px;*/
+    /*height: 4px;*/
+    /*margin-left: 10px;*/
+    /*top: -10px;*/
+    /*margin-bottom: 4px;*/
+    /*position: relative;*/
+    /*background: white;*/
+    /*border-radius: 3px;*/
+    /*z-index: 1;*/
+/*}*/
+
 .filter{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 a.filter-header{
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    background-color: #f7f5f6;
+    color: #0a0a0a;
+
 }
 .toggle{
     margin:0 10px;
-    font-size: 1.2rem;
 }
 .filter h4{
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding-left: 10px;
+    color: #0a0a0a;
+    font-size: 14px;
+    font-weight: 700;
 }
+/*.filter-header .plus{*/
+    /*display: none;*/
+/*}*/
+/*.closed .plus{*/
+    /*display: block;*/
+/*}*/
+/*.closed .minus{*/
+    /*display: none;*/
+/*}*/
+
 .checkboxes{
     margin: 5px 0;
     font-size: 16px;
@@ -1240,8 +1281,8 @@ a.filter-header{
     position: relative;
     float: left;
     margin-right: 8px;
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     border: 2px solid #C8CCD4;
     border-radius: 3px;
 }
@@ -1277,6 +1318,9 @@ a.filter-header{
 .label-cbx > span {
     pointer-events: none;
     vertical-align: middle;
+    color: #0a0a0a;
+    font-size: 14px;
+    font-weight: 300;
 }
 .cntr span{
     text-transform: lowercase;
@@ -1315,6 +1359,58 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
     border: 1px solid #C8CCD4;
     max-width: 250px;
 }
+.list-unstyled{
+    margin-right: 16px;
+    border-right: 1px solid #e5b8ff;
+}
+
+
+.price_my_range{
+    margin: 15px 0;
+    padding: 0 15px;
+    border: none;
+    height: 2px;
+    width: 80%;
+}
+.noUi-connect {
+    background-color: #ffaa00;
+}
+.noUi-handle{
+    width: 20px!important;
+    height: 20px!important;
+    border-radius: 50%!important;
+    top: -10px!important;
+    outline: none;
+    background-image: linear-gradient(180deg, #9e3ffc 0%, #cb3ffc 100%);
+    border: none;
+}
+.noUi-handle:after,
+.noUi-handle:before{
+    display: none;
+}
+.range-inputs{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.range-inputs input{
+    width: 80px;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    margin: 0 10px;
+}
+.range-inputs input[type=number]::-webkit-inner-spin-button,
+.range-inputs input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.range-inputs input:focus{
+    outline: none;
+}
+
+
 /*filter*/
 
 /*search-product*/
@@ -3152,35 +3248,5 @@ label.tab.active{
     }
 }
 
-.price_my_range{
-    margin: 30px 0;
-    padding: 0 15px;
-}
-.noUi-connect {
-    background-color: #933ec5;;
-}
-.noUi-handle{
-    outline: none;
-}
-.range-inputs{
-    display: flex;
-    /*justify-content: center;*/
-    align-items: center;
-}
-.range-inputs input{
-    width: 80px;
-    border: none;
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: 1px solid #999999;
-    margin: 0 10px;
-}
-.range-inputs input[type=number]::-webkit-inner-spin-button,
-.range-inputs input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-.range-inputs input:focus{
-    outline: none;
-}
+
 

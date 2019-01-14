@@ -1,10 +1,11 @@
 
 /*-----accordion-in-search-page--------*/
 $('.filter-header').on('click', function () {
-    $(this).find( ".toggle" ).toggle(1,function() {
-        $(this).find('.fa-plus').show();
-        $(this).find('.fa-minus').hide();
-    });
+    // $(this).find( ".toggle" ).toggle(1,function() {
+    //     $(this).find('.plus').show();
+    //     $(this).find('.minus').hide();
+    // });
+    $(this).toggleClass('closed');
 });
 
 /*-----tabs-login-signup-forms--------*/
@@ -557,6 +558,11 @@ $('.header-bottom-sm-wrap a').click(function () {
    $('.header-bottom-search-form-sm').toggleClass(' active-form');
    $('.header-bottom-search-form-sm .header-search-input').focus();
    $(this).parent().toggleClass(' active');
+});
+
+
+$(document).ready(function() {
+    $('.city-select').niceSelect();
 });
 
 
