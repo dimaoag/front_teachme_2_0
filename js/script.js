@@ -551,3 +551,13 @@ $(function() {
 $(function(){
     $('.dl-menuwrapper li > a:not(:only-child) > svg').css( "display", "block" );
 });
+
+
+$('.header-bottom-sm-wrap a').click(function () {
+   $('.header-bottom-search-form-sm').toggleClass(' active-form');
+   $('.header-bottom-search-form-sm .header-search-input').focus();
+   $(this).parent().toggleClass(' active');
+});
+
+
+
