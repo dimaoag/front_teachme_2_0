@@ -1,11 +1,14 @@
 
+
+
 /*-----accordion-in-search-page--------*/
-$('.filter-header').on('click', function () {
-    // $(this).find( ".toggle" ).toggle(1,function() {
-    //     $(this).find('.plus').show();
-    //     $(this).find('.minus').hide();
-    // });
-    $(this).toggleClass('closed');
+$('.filter-header').click(function () {
+    // $(this).find($('i')).toggle();
+    $(this).find( ".toggle" ).toggle(1,function() {
+        $(this).find('.plus').show();
+        $(this).find('.minus').hide();
+    });
+
 });
 
 /*-----tabs-login-signup-forms--------*/

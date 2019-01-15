@@ -1229,22 +1229,19 @@ a.filter-header{
 
 }
 .toggle{
-    margin:0 10px;
+    margin:0 6px;
+    font-style: normal;
+    font-size: 20px;
+    color: #933ec5;
+    font-weight: 100;
 }
 .filter h4{
     color: #0a0a0a;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
 }
-/*.filter-header .plus{*/
-    /*display: none;*/
-/*}*/
-/*.closed .plus{*/
-    /*display: block;*/
-/*}*/
-/*.closed .minus{*/
-    /*display: none;*/
-/*}*/
+
+
 
 .checkboxes{
     margin: 5px 0;
@@ -1264,6 +1261,12 @@ a.filter-header{
     -ms-flex-align: center;
     align-items: center;
     height: 25px;
+}
+.label-cbx .count-number{
+    color: #a8a8a8;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: 10px;
 }
 .label-cbx input:checked + .checkbox {
     border-color: #933ec5;
@@ -1319,7 +1322,7 @@ a.filter-header{
     pointer-events: none;
     vertical-align: middle;
     color: #0a0a0a;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 300;
 }
 .cntr span{
@@ -1383,6 +1386,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
     outline: none;
     background-image: linear-gradient(180deg, #9e3ffc 0%, #cb3ffc 100%);
     border: none;
+    cursor: grabbing;
 }
 .noUi-handle:after,
 .noUi-handle:before{
@@ -1390,17 +1394,24 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 }
 .range-inputs{
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
+    margin: 20px 0 25px 0;
 }
 .range-inputs input{
     width: 80px;
-    border: none;
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: 1px solid #999999;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #a8a8a8;
     margin: 0 10px;
+    color: #a8a8a8;
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: center;
 }
+.range-inputs input:first-child{
+    margin-left: 0;
+}
+
 .range-inputs input[type=number]::-webkit-inner-spin-button,
 .range-inputs input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
