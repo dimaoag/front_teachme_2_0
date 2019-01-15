@@ -162,7 +162,7 @@
                         <div class="col-xs-12">
                             <div class="header-bottom-wrap">
                                 <div class="cat-wrap">
-                                    <div class="con-tooltip bottom bottom-lg-menu">
+                                    <div class="con-tooltip bottom bottom-lg-menu" id="con-tooltip">
                                         <div class="cat-wrapper">
                                             <div class="cat-label">Категории</div>
                                             <span class="cat-arrow">
@@ -1111,6 +1111,7 @@
         </header>
 
         <main class="main">
+            <div class="bg-hover" id="bg-hover"></div>
             <section class="breadcrumbs">
                 <div class="container">
                     <div class="row">
@@ -1128,7 +1129,7 @@
             <main class="content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="filter-wrap">
                                 <div class="city-select-wrap">
                                     <select class="nice-select city-select">
@@ -1402,7 +1403,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-9 search-courses-container">
+                        <div class="col-md-9 col-sm-8 search-courses-container">
                             <div class="search-courses-nav">
                                 <div class="count-number-courses">
                                     Найдено 110 обьявлений
@@ -1419,546 +1420,585 @@
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                            <div class="search-courses-container-wrapper">
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                    <div class="search-course-middle">
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                            </div>
-                                            <div class="count-comments">(75)</div>
-                                        </div>
-                                    </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">мастер-класс</p>
-                                            <p class="master-class">курс</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p class="current-price">2500 грн</p>
-                                            <p class="old-price">3500 грн</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
-                                        </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="search-course">
-                                <div class="search-course-img">
-                                    <a href="#">
-                                        <img src="img/search_course.png" alt="">
-                                    </a>
-                                    <div class="favorite-img">
-                                        <a href="#" class="favorite-toggle hvr-grow">
-                                            <i class="fa fa-heart-o"></i>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="search-course-info">
-                                    <div class="search-course-header">
-                                        <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
+                                        <div class="favorite-img">
                                             <a href="#" class="favorite-toggle hvr-grow">
                                                 <i class="fa fa-heart-o"></i>
                                             </a>
-                                            <p>в избранное</p>
                                         </div>
                                     </div>
-                                    <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="rating star-icon value-3 color-ok label-left slow">
-                                            <div class="label-value">3.1</div>
-                                            <div class="star-container">
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
                                                 </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
-                                                <div class="star">
-                                                    <i class="star-empty"></i>
-                                                    <i class="star-half"></i>
-                                                    <i class="star-filled"></i>
-                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-course-footer">
-                                        <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
-                                            <p class="search-course-footer-city">(Винница)</p>
+                                </div>
+                                <div class="search-course">
+                                    <div class="search-course-img">
+                                        <a href="#">
+                                            <img src="img/search_course.png" alt="">
+                                        </a>
+                                        <div class="favorite-img">
+                                            <a href="#" class="favorite-toggle hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
                                         </div>
-                                        <div class="price">
-                                            <p>2500 грн</p>
+                                    </div>
+                                    <div class="search-course-info">
+                                        <div class="search-course-header">
+                                            <h4><a href="#">Базовый курс по наращиванию ресниц</a></h4>
+                                            <a href="#" class="favorite-toggle favorite-icon-lg hvr-grow">
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </div>
+                                        <div class="search-course-middle">
+                                            <div class="rating star-icon value-3 color-ok label-left slow">
+                                                <div class="label-value">3.1</div>
+                                                <div class="star-container">
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="star-empty"></i>
+                                                        <i class="star-half"></i>
+                                                        <i class="star-filled"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="count-comments">(75)</div>
+                                            </div>
+                                        </div>
+                                        <div class="search-course-footer">
+                                            <div class="search-course-footer-left">
+                                                <p class="master-class">мастер-класс</p>
+                                                <p class="master-class">курс</p>
+                                                <p class="search-course-footer-city">(Винница)</p>
+                                            </div>
+                                            <div class="price">
+                                                <div class="sm-course-rating">
+                                                    <span>5.0</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                    <svg class="star-hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="268ea" d="M527.651 290.384l1.962 3.776 4.387.606-3.175 2.939.75 4.15-3.924-1.96-3.924 1.96.75-4.15-3.175-2.94 4.387-.605z"/></defs><g><g transform="translate(-521 -290)"><use fill="#efce4a" xlink:href="#268ea"/></g></g></svg>
+                                                </div>
+                                                <p class="old-price">3500 грн</p>
+                                                <p class="current-price">2500 грн</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

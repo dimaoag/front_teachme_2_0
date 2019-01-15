@@ -570,4 +570,9 @@ $(document).ready(function() {
 });
 
 
+$('.con-tooltip').hover(function () {
+    $('#bg-hover').css( "display", "block" );
+}, function () {
+    $('#bg-hover').css( "display", "none" );
+});
 
