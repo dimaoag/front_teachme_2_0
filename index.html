@@ -1130,7 +1130,6 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="filter-wrap">
-
                                 <div class="city-select-wrap">
                                     <select class="nice-select city-select">
                                         <option data-display="Выберите город">Выберите город</option>
@@ -1153,7 +1152,6 @@
                                     </select>
                                     <div class="clearfix"></div>
                                 </div>
-
                                 <div class="filter">
                                     <a href="#filter1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle filter-header">
                                         <h4>Тип обучения</h4>
@@ -1394,27 +1392,33 @@
                                 <div class="filter">
                                     <h4>Цена</h4>
                                     <div class="checkboxes">
-                                        <!--<input type="hidden" id="hidden_minimum_price" value="0">-->
-                                        <!--<input type="hidden" id="hidden_maximum_price" value="10000">-->
-                                        <!--<p id="price_show">1000 - 10000 грн</p>-->
-                                        <!--<div id="price_range"></div>-->
-
-                                        <!--<p id="amount"></p>-->
-                                        <!--<div id="slider-range" class="price-range" style="margin: 25px 0;"></div>-->
-                                        <!--<input type="hidden" id="min_price">-->
-                                        <!--<input type="hidden" id="max_price">-->
                                         <div class="range-inputs">
                                             <input type="number" id="min_price">
                                             <p> - </p>
                                             <input type="number" id="max_price" min="1" value="1">
                                         </div>
                                         <div class="price_my_range" id="price_my_range"></div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-9 search-courses-container">
+                            <div class="search-courses-nav">
+                                <div class="count-number-courses">
+                                    Найдено 110 обьявлений
+                                </div>
+                                <button class="button-clear"><span class="button-clear-icon">&Cross;</span><span class="button-clear-text">очистить фильтр</span></button>
+                                <div class="courses-sort-select">
+                                    <select class="nice-select right sort-select">
+                                        <!--<option data-display="Выберите город"></option>-->
+                                        <option value="1" data-display="за рейтингом">по рейтингу</option>
+                                        <option value="2" >от дешевих к дорогим</option>
+                                        <option value="3" >от дорогих к дешевым</option>
+                                        <option value="4" >по названию</option>
+                                    </select>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
                             <div class="search-course">
                                 <div class="search-course-img">
                                     <a href="#">
@@ -1429,17 +1433,11 @@
                                 <div class="search-course-info">
                                     <div class="search-course-header">
                                         <h4><a href="#">Курс аппаратного маникю  оффлайн для начинающих</a></h4>
-                                        <div class="favorite">
-                                            <a href="#" class="favorite-toggle hvr-grow">
-                                                <i class="fa fa-heart-o"></i>
-                                            </a>
-                                            <p>в избранное</p>
-                                        </div>
+                                        <a href="#" class="favorite-toggle hvr-grow">
+                                            <i class="fa fa-heart-o"></i>
+                                        </a>
                                     </div>
                                     <div class="search-course-middle">
-                                        <div class="search-course-date">
-                                            <span>оффлайн</span>
-                                        </div>
                                         <div class="rating star-icon value-3 color-ok label-left slow">
                                             <div class="label-value">3.1</div>
                                             <div class="star-container">
@@ -1469,16 +1467,18 @@
                                                     <i class="star-filled"></i>
                                                 </div>
                                             </div>
+                                            <div class="count-comments">(75)</div>
                                         </div>
                                     </div>
                                     <div class="search-course-footer">
                                         <div class="search-course-footer-left">
-                                            <p class="master-class">Мастер-класс:</p>
-                                            <p class="sits">до 3 учеников</p>
+                                            <p class="master-class">мастер-класс</p>
+                                            <p class="master-class">курс</p>
                                             <p class="search-course-footer-city">(Винница)</p>
                                         </div>
                                         <div class="price">
-                                            <p>2500 грн</p>
+                                            <p class="current-price">2500 грн</p>
+                                            <p class="old-price">3500 грн</p>
                                         </div>
                                     </div>
                                 </div>

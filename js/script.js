@@ -566,6 +566,7 @@ $('.header-bottom-sm-wrap a').click(function () {
 
 $(document).ready(function() {
     $('.city-select').niceSelect();
+    $('.sort-select').niceSelect();
 });
 
 
