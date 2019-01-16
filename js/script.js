@@ -45,10 +45,9 @@ $('.open-popup-phones_md').magnificPopup({
 });
 
 /*-----gallery-in-company-page--------*/
-$('.center').slick({
+$('.gallery-course-container').slick({
     centerMode: true,
     infinite: true,
-    centerPadding: '60px',
     slidesToShow: 3,
     speed: 300,
     prevArrow: $('.gallery-prev'),
@@ -62,7 +61,6 @@ $('.center').slick({
             settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 1
             }
         }
