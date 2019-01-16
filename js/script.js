@@ -458,23 +458,37 @@ if ($('div').is('#price_my_range')) {
     var input0 = document.getElementById('min_price');
     var input1 = document.getElementById('max_price');
     var inputs = [input0, input1];
+    var maxPrice = Number(input1.value);
+    console.log(maxPrice);
+    var currentMin = Number(input0.value);
+    var currentMax = Number(input1.value);
+
+    if (currentMax == 0){
+        currentMax = maxPrice;
+    }
+
+
 
     noUiSlider.create(keypressSlider, {
-        start: [100, 10000],
+        start: [currentMin, currentMax],
         connect: true,
         // direction: 'rtl',
         // tooltips: [true, wNumb({decimals: 1})],
+        // tooltips: true,
+
         range: {
-            'min': [100],
-            '1%': 200,
-            'max': 10000
-        }
+            'min': [0],
+            'max': [maxPrice],
+        },
+        step: 50,
+
     });
     function setSliderHandle(i, value) {
         var r = [null, null];
-        r[i] = value;
+        r[i] = Number(value);
         keypressSlider.noUiSlider.set(r);
     }
+
 // Listen to keydown events on the input field.
     inputs.forEach(function (input, handle) {
         input.addEventListener('change', function () {
@@ -524,6 +538,92 @@ if ($('div').is('#price_my_range')) {
     });
 }
 
+if ($('div').is('#price_my_range_sm')) {
+    var keypressSlider = document.getElementById('price_my_range_sm');
+    var input0 = document.getElementById('min_price_sm');
+    var input1 = document.getElementById('max_price_sm');
+    var inputs = [input0, input1];
+    var maxPrice = Number(input1.value);
+    console.log(maxPrice);
+    var currentMin = Number(input0.value);
+    var currentMax = Number(input1.value);
+
+    if (currentMax == 0){
+        currentMax = maxPrice;
+    }
+
+
+
+    noUiSlider.create(keypressSlider, {
+        start: [currentMin, currentMax],
+        connect: true,
+        // direction: 'rtl',
+        // tooltips: [true, wNumb({decimals: 1})],
+        // tooltips: true,
+
+        range: {
+            'min': [0],
+            'max': [maxPrice],
+        },
+        step: 50,
+
+    });
+    function setSliderHandle(i, value) {
+        var r = [null, null];
+        r[i] = Number(value);
+        keypressSlider.noUiSlider.set(r);
+    }
+
+// Listen to keydown events on the input field.
+    inputs.forEach(function (input, handle) {
+        input.addEventListener('change', function () {
+            setSliderHandle(handle, this.value);
+        });
+        input.addEventListener('keydown', function (e) {
+            var values = keypressSlider.noUiSlider.get();
+            var value = Number(values[handle]);
+            // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+            var steps = keypressSlider.noUiSlider.steps();
+            // [down, up]
+            var step = steps[handle];
+            var position;
+            // 13 is enter,
+            // 38 is key up,
+            // 40 is key down.
+            switch (e.which) {
+                case 13:
+                    setSliderHandle(handle, this.value);
+                    break;
+                case 38:
+                    // Get step to go increase slider value (up)
+                    position = step[1];
+                    // false = no step is set
+                    if (position === false) {
+                        position = 1;
+                    }
+                    // null = edge of slider
+                    if (position !== null) {
+                        setSliderHandle(handle, value + position);
+                    }
+                    break;
+                case 40:
+                    position = step[0];
+                    if (position === false) {
+                        position = 1;
+                    }
+                    if (position !== null) {
+                        setSliderHandle(handle, value - position);
+                    }
+                    break;
+            }
+        });
+    });
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+}
+
+
 if ($('ul').is('#main-menu')) {
     $(function() {
         $('#main-menu').smartmenus();
@@ -570,9 +670,17 @@ $(document).ready(function() {
 });
 
 
-$('.con-tooltip').hover(function () {
+$('.bottom-lg-menu').hover(function () {
     $('#bg-hover').css( "display", "block" );
 }, function () {
     $('#bg-hover').css( "display", "none" );
 });
 
+/*-----open-popup-search-filter--------*/
+var open_popup = $('.open-popup').magnificPopup({
+    type:'inline',
+    midClick: true,
+});
+$('.header-filter-back-btn').click(function () {
+    $.magnificPopup.close(open_popup);
+});

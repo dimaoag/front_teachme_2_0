@@ -183,6 +183,7 @@
 				};
 			
 			this.$menu.removeClass( 'dl-menuopen' );
+			$('#bg-hover').hide();
 			this.$menu.addClass( 'dl-menu-toggle' );
 			this.$trigger.removeClass( 'dl-active' );
 			
@@ -209,6 +210,7 @@
 			this.$menu.addClass( 'dl-menuopen dl-menu-toggle' ).on( this.transEndEventName, function() {
 				$( this ).removeClass( 'dl-menu-toggle' );
 			} );
+			$('#bg-hover').show();
 			this.$trigger.addClass( 'dl-active' );
 			this.open = true;
 		},

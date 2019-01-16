@@ -446,6 +446,17 @@ input[type=text], textarea {
 }
 
 /* --------------- /базовые настройки ---------*/
+
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
 /*header*/
 .header-icon-svg{
     fill: white;
@@ -1356,10 +1367,9 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 
 .price_my_range{
     margin: 15px 0;
-    padding: 0 15px;
     border: none;
     height: 2px;
-    width: 80%;
+    width: 74%;
 }
 .noUi-connect {
     background-color: #ffaa00;
@@ -1633,7 +1643,158 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
 .star-hide{
     display: none;
 }
+.buttons-sm{
+    display: none;
+    z-index: 2;
+}
+.buttons-sm .col-xs-12{
+    display: flex;
+    justify-content: center;
+}
+.button-sm{
+    display: block;
+    background-color: #9e3ffc;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 35px;
+    border: none;
+    margin-right: 2px;
+    transition: color 0.2s linear;
+    /*flex-basis: 143px;*/
+    flex-grow: 1;
+    outline: none;
+}
+.button-sm:hover{
+    color: #eeeeee;
+    transition: color 0.2s linear;
+}
+.search-filter-sm{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: white;
+    margin: 0;
+    border-radius: 0;
+    overflow-y: auto;
+    padding: 15px 15px 15px 15px;
+}
+.search-filter-sm .city-select,
+.search-filter-sm .city-select .list{
+    width: auto;
+}
+.search-filter-sm .count-number{
+    margin-left: auto;
+}
+.search-filter-sm .price_my_range{
+    width: 100%;
+    padding-right: 15px;
+}
+.header-filter-sm{
+    background-image: linear-gradient(13deg, #9e3ffc 0%, #cb3ffc 100%);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: -15px -15px 15px -15px;
+}
+.header-filter-sm p{
+    margin-left: -40px;
+    width: 100%;
+}
+.search-filter-sm .mfp-close{
+    display: none;
+}
+.header-filter-back-btn{
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+.header-filter-back-btn:after {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    content: '';
+    display: block;
+    height: 10px;
+    margin-top: -4px;
+    position: absolute;
+    right: 12px;
+    top: 36%;
+    transform-origin: 66% 66%;
+    transform: rotate(135deg);
+    transition: all 0.15s ease-in-out;
+    width: 10px;
+}
+.search-filter-sm-buttons{
+    display: flex;
+    margin: 40px 0 20px 0;
+}
+.search-filter-sm-buttons .button-sm{
+    flex-grow: 1;
+}
+.bg-clear{
+    background-color: #a8a8a8;
+}
 
+.sort-sm .mfp-close{
+    display: none;
+}
+.sort-sm{
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    width: 290px;
+    border-radius: 0;
+    padding: 0;
+}
+.sort-sm-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.sort-sm-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    padding: 0 15px;
+}
+.sort-sm-item .icon{
+    margin-right: 15px;
+}
+.sort-sm-item .text{
+    padding: 7px 0;
+    color: #0a0a0a;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.sort-sm-item:hover .text{
+    font-weight: 400;
+}
+.sort-sm-item .text:after{
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1199px){
+    .range-inputs input{
+        margin: 0 15px;
+    }
+    .price_my_range{
+        width: 82%;
+    }
+}
 
 @media screen and (max-width: 991px){
     .count-number-courses{
@@ -1706,6 +1867,24 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
     .favorite-img{
         display: block;
     }
+    .buttons-sm{
+        display: block;
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        width: 100%;
+    }
+    .filter-wrap-sm{
+        display: block;
+    }
+    .list-unstyled {
+        margin-right: 0;
+        border: none;
+    }
+    .filter-header-sm i{
+        display: none;
+    }
+
 
 }
 
@@ -1969,15 +2148,7 @@ label.tab.active{
     width: 100%;
     margin: 0 1px;
 }
-.white-popup {
-    position: relative;
-    background: #FFF;
-    padding: 20px;
-    width: auto;
-    max-width: 500px;
-    margin: 20px auto;
-    border-radius: 10px;
-}
+
 .white-popup > .course-info-footer{
     margin-top: 15px;
 }
