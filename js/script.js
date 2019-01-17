@@ -50,8 +50,8 @@ $('.gallery-course-container').slick({
     infinite: true,
     slidesToShow: 3,
     speed: 300,
-    prevArrow: $('.gallery-prev'),
-    nextArrow: $('.gallery-next'),
+    prevArrow: $('.gallery-nav-prev'),
+    nextArrow: $('.gallery-nav-next'),
     variableWidth: false,
     autoplay:true,
     autoplaySpeed: 2000,
@@ -59,7 +59,6 @@ $('.gallery-course-container').slick({
         {
             breakpoint: 768,
             settings: {
-                arrows: false,
                 centerMode: true,
                 slidesToShow: 1
             }
@@ -681,4 +680,10 @@ var open_popup = $('.open-popup').magnificPopup({
 });
 $('.header-filter-back-btn').click(function () {
     $.magnificPopup.close(open_popup);
+});
+
+$('.gallery-nav').hover(function () {
+    $(this).find($('svg')).css( "fill", "black" );
+}, function () {
+    $(this).find($('svg')).css( "fill", "f6f4f4");
 });

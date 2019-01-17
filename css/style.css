@@ -1992,14 +1992,14 @@ label.tab.active{
     font-family: Roboto, sans-serif;
 }
 .course-item-box{
-    padding: 15px 0;
+    padding: 20px 0;
     border-bottom: 2px solid #f6f6f6;
 }
 .course-item-box-title{
     color: #0a0a0a;
     font-size: 1.125rem;
     font-weight: 700;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .course-title{
     color: #0a0a0a;
@@ -2065,6 +2065,10 @@ label.tab.active{
 }
 
 /*---------course-gallery-------------*/
+.gallery-wrap{
+    position: relative;
+    margin: 20px 0 25px 0;
+}
 .clip a{
     display: block;
     height: 100%;
@@ -2075,6 +2079,35 @@ label.tab.active{
 }
 .gallery-course-container .slick-track{
     margin-left: 0;
+}
+
+.gallery-counts{
+    color: #a8a8a8;
+    font-size: 1rem;
+}
+.gallery-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.gallery-nav svg{
+    fill: #f6f4f4;
+    transition: 0.3s;
+}
+
+.gallery-nav-prev{
+    left: 0;
+}
+.gallery-nav-next{
+    right: 0;
 }
 
 
