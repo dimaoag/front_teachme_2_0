@@ -68,7 +68,10 @@ $('.gallery-course-container').slick({
 
 /*-----open-images-in-popup--------*/
 $('.clip a').magnificPopup({
-    type: 'image'
+    type: 'image',
+    gallery:{
+        enabled:true
+    }
     // other options
 });
 
@@ -87,8 +90,7 @@ $('.course-related-carousel').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     speed: 300,
-    prevArrow: $('.related-prev'),
-    nextArrow: $('.related-next'),
+    arrows:false,
     variableWidth: false,
     autoplay:true,
     autoplaySpeed: 2000,
@@ -96,6 +98,7 @@ $('.course-related-carousel').slick({
         {
             breakpoint: 1200,
             settings: {
+                arrows:false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
@@ -104,6 +107,7 @@ $('.course-related-carousel').slick({
         {
             breakpoint: 992,
             settings: {
+                arrows:false,
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
@@ -112,6 +116,7 @@ $('.course-related-carousel').slick({
         {
             breakpoint: 500,
             settings: {
+                arrows:false,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
@@ -678,12 +683,19 @@ var open_popup = $('.open-popup').magnificPopup({
     type:'inline',
     midClick: true,
 });
+
 $('.header-filter-back-btn').click(function () {
     $.magnificPopup.close(open_popup);
 });
+
 
 $('.gallery-nav').hover(function () {
     $(this).find($('svg')).css( "fill", "black" );
 }, function () {
     $(this).find($('svg')).css( "fill", "f6f4f4");
+});
+
+
+$(document).ready(function(){
+    $("#course-info-footer").sticky({topSpacing:15});
 });
