@@ -1627,15 +1627,17 @@ span.ui-slider-handle.ui-state-default.ui-corner-all:focus, span.ui-slider-handl
     font-size: 1.125rem;
     font-weight: 700;
 }
-.price .old-price{
-    position: absolute;
-    top: -100%;
-    right: 0;
+.old-price{
     background-color: #f6f4f4;
     color: #a8a8a8;
     font-size: 0.875rem;
     padding: 0 5px;
     font-weight: 400;
+}
+.price .old-price{
+    position: absolute;
+    top: -100%;
+    right: 0;
 }
 .sm-course-rating{
     display: none;
@@ -2110,74 +2112,40 @@ label.tab.active{
     right: 0;
 }
 
-
-/*---------course-accordion-------------*/
-.course-programm{
-    margin: 10px 0;
-    line-height: 33.1px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid black;
-}
-.accordion-item{
-    padding: 10px 0;
-}
-.accordion-title{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: black;
-}
-.accordion-title i{
-    color: #933ec5;
-}
-.accordion-title span{
-    color: #933ec5;
-    margin-right: 10px;
-}
-.accordion-title:hover, .accordion-title:focus{
-    color: black;
-}
-.accordion-title h4{
-    font-size: 1.2rem;
-}
-.accordion-desc{
-    padding: 10px 30px 10px 15px;
-    text-indent: 25px;
-    text-align: justify;
-}
-
 /*---------course-related-------------*/
-.course-related{
-    margin: 10px 0;
-    padding-bottom: 30px;
-    border-bottom: 1px solid black;
-}
 .course-related-item a{
     outline: none;
 }
+.course-related-carousel .slick-track{
+    margin-left: 0!important;
+}
+.course-related-carousel .slick-slide {
+    margin: 0 5px;
+}
+/* the parent */
+.course-related-carousel .slick-list {
+    margin: 0 -5px;
+}
 .course-related-item{
-    padding: 10px;
-    border: 1px solid #933ec5;
-    margin: 10px;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
 }
 .course-related-img img{
     width: 100%;
 }
 .course-related-title{
-    color: black;
-    font-weight: bold;
+    color: #0a0a0a;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 .course-related-address{
     padding: 5px 0;
 }
 .course-related-address i{
-    color: #933ec5;
+    color:  #9e3ffc;
     margin-right: 7px;
 }
 .course-related-stars{
@@ -2191,10 +2159,15 @@ label.tab.active{
     color: #999999;
 }
 .course-relate-price{
-    font-size: 1.2rem;
-    text-align: right;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
     padding: 5px 0;
+}
+.course-relate-price .current-price{
+    color: #0a0a0a;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-right: 10px;
 }
 
 /*---------course-reviews-------------*/

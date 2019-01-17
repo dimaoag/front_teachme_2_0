@@ -44,7 +44,7 @@ $('.open-popup-phones_md').magnificPopup({
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
 
-/*-----gallery-in-company-page--------*/
+/*-----gallery-course-page--------*/
 $('.gallery-course-container').slick({
     centerMode: true,
     infinite: true,
@@ -73,12 +73,12 @@ $('.clip a').magnificPopup({
 });
 
 
-$('.accordion-title').on('click', function () {
-    $(this).find( ".toggle" ).toggle(10,function() {
-        $(this).find('.fa-angle-up').show();
-        $(this).find('.fa-angle-down').hide();
-    });
-});
+// $('.accordion-title').on('click', function () {
+//     $(this).find( ".toggle" ).toggle(10,function() {
+//         $(this).find('.fa-angle-up').show();
+//         $(this).find('.fa-angle-down').hide();
+//     });
+// });
 
 
 /*-----related-courses--------*/
